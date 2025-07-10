@@ -146,6 +146,11 @@ async function checkToken() {
 }
 
 async function authenticate() {
+  if (typeof window === 'undefined' || !window.crypto) {
+    console.error('Crypto not available during build.');
+    return;
+  }
+
   const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
   const randomValues = crypto.getRandomValues(new Uint8Array(64));
   const randomString = randomValues.reduce((acc, x) => acc + possible[x % possible.length], "");
