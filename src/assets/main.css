@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url('src/assets/images/background.png') no-repeat center center;
+  background: url('~@/assets/images/background.png') no-repeat center center;
   background-size: cover;
   min-height: 100vh;
   color: #333;
