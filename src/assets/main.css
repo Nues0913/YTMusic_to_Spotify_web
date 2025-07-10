@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('src/assets/images/background.png') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  color: #333;
+}
+  
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
